@@ -18,7 +18,7 @@ html {
   font-size: 18px;
   background-color: #1b1919;
   align-items: center;
-  padding: 133px 30px;
+  padding: 153px 30px;
 }
 
 h1,
@@ -47,6 +47,12 @@ ol {
   align-items: end;
   margin: auto;
   gap: 30px;
+}
+
+.result {
+  display: grid;
+  align-self: flex-end;
+  grid-template-rows: auto 1fr;
 }
 
 .search-form {
@@ -85,6 +91,7 @@ ol {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .content__list-item {
