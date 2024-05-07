@@ -12,13 +12,14 @@ html {
   display: flex;
   inline-size: 1200px;
   block-size: 100%;
-  margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  justify-content: center;
   align-items: center;
-  padding: 153px 30px;
+  margin: auto;
+  padding-block-start: 133px;
 }
 
 h1,
@@ -46,7 +47,7 @@ ol {
   flex-direction: row;
   align-items: end;
   margin: auto;
-  gap: 30px;
+  gap: 26px;
 }
 
 .result {
