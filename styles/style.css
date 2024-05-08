@@ -1,53 +1,10 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html {
-  block-size: 10 0%;
-}
-
-.page {
-  display: flex;
-  inline-size: 1200px;
-  block-size: 100%;
-  color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
-  font-size: 18px;
-  background-color: #1b1919;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  padding-block-start: 133px;
-}
-
-h1,
-h2,
-h3,
-h4,
-p,
-ul,
-ol,
-li,
-blockquote,
-fieldset {
-  margin: 0;
-  padding: 0;
-}
-
-ul,
-ol {
-  list-style: none;
-}
-
 .content {
   display: flex;
   max-inline-size: 1140px;
   flex-direction: row;
   align-items: end;
   margin: auto;
-  gap: 26px;
+  gap: 32px;
 }
 
 .result {
@@ -67,7 +24,8 @@ ol {
   display: flex;
   position: relative;
   flex-direction: column;
-  max-block-size: 295px;
+  block-size: 295px;
+  min-inline-size: 395px;
   overflow: auto;
   gap: 34px;
 }
@@ -122,15 +80,14 @@ ol {
 }
 
 .search-form__fieldset-title {
-  color: rgba(255, 255, 255, 0.7);
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
 }
 
 .title {
-  font-family: Oswald;
+  font-family: 'Oswald', sans-serif;
   font-size: 75px;
   font-weight: 700;
   line-height: 94%;
@@ -144,19 +101,19 @@ ol {
 .content__card-link {
   display: block;
   text-decoration: none;
-  text-transform: uppercase;
   margin: 2px;
 }
 
 .content__video-card-title {
+  display: block;
   color: rgb(255, 255, 255);
-  font-family: Fira Sans Condensed;
+  font-family: 'Oswald', sans-serif;
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 16.2px;
-  letter-spacing: 0%;
   text-align: left;
   margin-block-start: 9px;
+  text-transform: uppercase;
 }
 
 .search-form__fieldset-title {
@@ -168,7 +125,7 @@ ol {
   font-weight: 400;
   line-height: 16.2px;
   color: rgb(255, 255, 255);
-  margin: 6px 0px;
+  padding: 6px 0 0;
 }
 
 .content__video-card-description-container {
@@ -207,17 +164,16 @@ ol {
 .search-form__textfield {
   appearance: none;
   inline-size: 225px;
-  block-size: 27px;
   border: none;
   background-color: inherit;
-  color: rgba(255, 255, 255, 0.7);
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
   text-align: left;
-  border-block-start: 1px solid rgb(255, 255, 255, 0.7);
-  border-block-end: 1px solid rgb(255, 255, 255, 0.7);
+  border-block-start: 1px solid rgb(255, 255, 255);
+  border-block-end: 1px solid rgb(255, 255, 255);
+  color: #545050;
 }
 
 .search-form__pseudo-checkbox {
@@ -235,7 +191,7 @@ ol {
   cursor: pointer;
   background-color: inherit;
   color: rgb(255, 255, 255);
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 22px;
